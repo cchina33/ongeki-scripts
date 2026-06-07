@@ -1,0 +1,63 @@
+# オンゲキNETスクリプト<br>
+このスクリプトはオンゲキNET上で使えます。ご自由にお使いください。<br>
+以下のJSコードをブックマークのURL部分に貼り付けて、オンゲキNET上でログインした状態でブックマークを呼び出すとスクリプトが実行されます。<br>
+このソースコードはChatGPTを使用し開発しています。<br>
+重大な不具合修復以外や追加機能は気まぐれの更新です。<br>
+このスクリプトは個人的に作った非公式ツールです。SEGA様及び関係者様には一切関係ございません。<br>
+
+## 各章ジュエル表示
+しずくの数も取得するようにしました。<br>
+ソースコード:[get_jewels](get_jewels.js)  
+```
+javascript:(()=>{let s=document.createElement('script');s.src="https://cchina33.github.io/ongeki-scripts/get_jewels.js";document.body.appendChild(s);})();  
+```
+## DDF&DDAジュエル計算
+正確ではない可能性があります。ご注意ください。<br>
+ソースコード:[jewel_calculator](jewel_calculator.js)  
+```
+javascript:(()=>{let s=document.createElement('script');s.src="https://cchina33.github.io/ongeki-scripts/jewel_calculator.js";document.body.appendChild(s);})();  
+```
+
+## 各キャラクター全国1位表  
+ソースコード:[Character_doi_ranking](Character_doi_ranking.js)  
+```
+javascript:(()=>{let s=document.createElement('script');s.src="https://cchina33.github.io/ongeki-scripts/Character_doi_ranking.js";document.body.appendChild(s);})();
+```
+
+## ランキング取得  
+県や店舗別のランキング取得にはゲキチュウマイ-NET スタンダードコースの登録が必要です。  
+取得したランキングが別タブで表示されます。
+ページの下部にhtmlとして保存するボタンがあります。  
+いろんな県や店舗でバトルランク / ポイントやレーティングのランキングデータを保存したりして旅の記録にしてみてください。
+### バトルポイントランキング  
+ソースコード:[Battle_ranking_acquisition_script](Battle_ranking_acquisition_script.js)  
+```
+javascript:(()=>{let s=document.createElement('script');s.src="https://cchina33.github.io/ongeki-scripts/Battle_ranking_acquisition_script.js";document.body.appendChild(s);})();
+```
+### レーティングランキング  
+ソースコード:[Rating_Ranking_acquisition_script](Rating_Ranking_acquisition_script.js)  
+```
+javascript:(()=>{let s=document.createElement('script');s.src="https://cchina33.github.io/ongeki-scripts/Rating_Ranking_acquisition_script.js";document.body.appendChild(s);})();
+```
+
+## カード番号取得しカード名を一覧で表示  
+オンゲキカード図鑑から取得したカード番号を[Card_ID_and_name](Card_ID_and_name)から探しカード名を別タブで表示されます。  
+Card_ID_and_nameにあるjsoncファイルはご自由に使っても構いませんが何らかの損害が発生した場合、一切責任を負いません。自己責任でお願いします。  
+ソースコード:[Card_information_acquisition](Card_information_acquisition.js)  
+```
+javascript:(()=>{let s=document.createElement('script');s.src="https://cchina33.github.io/ongeki-scripts/Card_information_acquisition.js";document.body.appendChild(s);})();
+```
+## 最終プレイ日時を一覧で表示 
+ゲキチュウマイ-NET スタンダードコースの登録が必要です。  
+楽曲別レコードで楽曲ジャンルや難易度を指定した上で実行してください。  
+ソースコード:[Songpage_last_played_date](Songpage_last_played_date.js)  
+```
+javascript:(()=>{let s=document.createElement('script');s.src="https://cchina33.github.io/ongeki-scripts/Songpage_last_played_date.js";document.body.appendChild(s);})();
+```
+## オンゲキとmaimaiでプレイ履歴からプレイ回数を表示
+オンゲキで使用するにはゲキチュウマイ-NET スタンダードコースの登録が必要です。  
+レコードのプレイ履歴の画面で実行して下さい。  
+ソースコード:[on-mai_PlayTally](on-mai_PlayTally.js)  
+```
+javascript:(()=>{let s=document.createElement('script');s.src="https://cchina33.github.io/ongeki-scripts/on-mai_PlayTally.js";document.body.appendChild(s);})();
+```
